@@ -1,0 +1,3 @@
+{
+  "extends": "@vagaspcd-ui/eslint-config"
+}

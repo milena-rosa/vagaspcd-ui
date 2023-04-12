@@ -1,0 +1,22 @@
+{
+  "name": "@vagaspcd-ui/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "Milena Boselli Rosa",
+  "license": "MIT",
+  "devDependencies": {
+    "@vagaspcd-ui/eslint-config": "*",
+    "@vagaspcd-ui/ts-config": "*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
