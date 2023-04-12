@@ -27,7 +27,7 @@ export const SelectTrigger = styled(SelectPrimitive.SelectTrigger, {
   },
 
   '&:focus': {
-    boxShadow: `0 0 0 2px black`,
+    boxShadow: `0 0 0 2px $colors$gray400`,
   },
 
   '&[data-placeholder]': {

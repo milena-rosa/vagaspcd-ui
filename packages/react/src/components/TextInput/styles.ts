@@ -7,10 +7,24 @@ export const TextInputContainer = styled('div', {
   borderRadius: '$sm',
   boxSizing: 'border-box',
   display: 'flex',
-  padding: '$3 $4',
+
+  variants: {
+    size: {
+      sm: {
+        padding: '$2 $3',
+      },
+      md: {
+        padding: '$3 $4',
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'md',
+  },
 
   // '&:has(input:focus)': {
-  // borderColor: '$ignite300',
+  //   borderColor: '$primary40',
   // },
 
   '&:focus-within': {
@@ -52,7 +66,7 @@ export const Input = styled('input', {
     cursor: 'not-allowed',
   },
 
-  '&:placeholder': {
+  '&::placeholder': {
     color: '$gray400',
   },
 })

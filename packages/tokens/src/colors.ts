@@ -14,6 +14,4 @@ export const colors = <const>{
   primary40: 'rgb(0, 48, 135, 0.4)',
   primary60: 'rgb(0, 48, 135, 0.6)',
   primary80: 'rgb(0, 48, 135, 0.8)',
-
-  test: '#f00',
 }

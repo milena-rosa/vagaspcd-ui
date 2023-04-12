@@ -1,5 +1,11 @@
 # @vagaspcd-ui/tokens
 
+## 1.1.2
+
+### Patch Changes
+
+- Improved and fixed some components.
+
 ## 1.1.1
 
 ### Patch Changes
