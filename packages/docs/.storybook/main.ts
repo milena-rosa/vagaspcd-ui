@@ -16,7 +16,7 @@ const config: StorybookConfig = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = 'vagaspcd-ui'
+      config.base = '/vagaspcd-ui'
     }
     return config
   }
