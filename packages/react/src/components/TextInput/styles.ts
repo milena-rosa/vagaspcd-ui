@@ -7,25 +7,18 @@ export const TextInputContainer = styled('div', {
   borderRadius: '$sm',
   boxSizing: 'border-box',
   display: 'flex',
+  width: '100%',
 
   variants: {
     size: {
-      sm: {
-        padding: '$2 $3',
-      },
-      md: {
-        padding: '$3 $4',
-      },
+      sm: { padding: '$2 $3' },
+      md: { padding: '$3 $4' },
     },
   },
 
   defaultVariants: {
     size: 'md',
   },
-
-  // '&:has(input:focus)': {
-  //   borderColor: '$primary40',
-  // },
 
   '&:focus-within': {
     borderColor: '$primary',

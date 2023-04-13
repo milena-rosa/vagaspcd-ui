@@ -1,5 +1,11 @@
 # @vagaspcd-ui/react
 
+## 1.2.0
+
+### Minor Changes
+
+- Adicionado componente de MultiStep.
+
 ## 1.1.1
 
 ### Patch Changes
