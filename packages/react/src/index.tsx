@@ -9,5 +9,6 @@ export * from './components/Tabs'
 export * from './components/Text'
 export * from './components/TextArea'
 export * from './components/TextInput'
+export * from './components/UnorderedList'
 
 export * from './styles'
