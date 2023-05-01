@@ -1,5 +1,17 @@
 # @vagaspcd-ui/react
 
+## 1.3.3
+
+### Patch Changes
+
+- Changes in unordered list component colors handling.
+
+## 1.3.2
+
+### Patch Changes
+
+- Add more variants to unordered list component.
+
 ## 1.3.1
 
 ### Patch Changes

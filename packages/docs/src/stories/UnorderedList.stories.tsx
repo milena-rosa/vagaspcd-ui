@@ -7,13 +7,13 @@ import {
 
 export default {
   title: 'Typography/UnorderedList',
-  component: UnorderedListComponent,
+  component: ListItem,
   args: {
     children: (
       <UnorderedListComponent>
-        <ListItem>Texto</ListItem>
-        <ListItem>Texto</ListItem>
-        <ListItem>Texto</ListItem>
+        <ListItem data-icon="›">Texto</ListItem>
+        <ListItem data-icon="🦄">Texto</ListItem>
+        <ListItem data-icon="😎">Texto</ListItem>
       </UnorderedListComponent>
     ),
   },
@@ -21,7 +21,17 @@ export default {
     children: {
       control: { type: null },
     },
+    color: {
+      options: ['primary', 'black', 'gray100', 'white', 'gray800'],
+      control: { type: 'inline-radio' },
+    },
   },
 } as Meta<UnorderedListProps>
 
 export const UnorderedList: StoryObj<UnorderedListProps> = {}
+
+export const LightBackgroundUnorderedList: StoryObj<UnorderedListProps> = {
+  args: {
+    color: 'gray800',
+  },
+}

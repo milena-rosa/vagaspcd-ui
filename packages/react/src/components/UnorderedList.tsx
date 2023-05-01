@@ -2,39 +2,33 @@ import { ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 
 export const UnorderedList = styled('ul', {
-  fontFamily: '$default',
-  lineHeight: '$short',
-  listStyleType: 'none',
-  margin: '$1 0 $4',
+  display: 'grid',
+  gridGap: '$4',
+  marginLeft: '$8',
   padding: 0,
-})
-
-export const ListItem = styled('li', {
-  listStyle: 'none',
-  paddingLeft: '$4',
-  position: 'relative',
-
-  '&::before': {
-    border: '1px solid $black',
-    borderWidth: '2px 2px 0 0',
-    content: '',
-    height: 5,
-    left: 0,
-    position: 'absolute',
-    top: 8,
-    transform: 'rotate(45deg)',
-    width: 5,
-  },
 
   variants: {
     color: {
-      primary: { borderColor: '$primary' },
-      black: { borderColor: '$black' },
+      gray100: { color: '$gray100' },
+      gray800: { color: '$gray800', background: 'lime' },
+      black: { color: '$black' },
+      primary: { color: '$primary' },
+      white: { color: '$white' },
     },
   },
 
   defaultVariants: {
-    color: 'black',
+    color: 'gray100',
+  },
+})
+
+export const ListItem = styled('li', {
+  fontFamily: '$default',
+  paddingLeft: '$2',
+
+  '&::marker': {
+    content: 'attr(data-icon)',
+    fontSize: '$xl',
   },
 })
 
@@ -43,4 +37,9 @@ export interface UnorderedListProps
   as?: ElementType
 }
 
+export interface ListItemProps extends ComponentProps<typeof ListItem> {
+  as?: ElementType
+}
+
 UnorderedList.displayName = 'UnorderedList'
+ListItem.displayName = 'ListItem'
